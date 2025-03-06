@@ -24,20 +24,41 @@ body{
     
     
 }
-@keyframes farapparire{
+@keyframes show{
    0%{
-       transform: translate(0,-125px); opacity:0.1
+       transform: translate(0,-125px); opacity:0; color: teal;
     }
    50%{
-       transform: translate(0,0px); opacity:1
+       transform: translate(0,0px); opacity:1;color: teal;
     }
    100%{
-       transform: translate(0,125px); opacity:0.1
+       transform: translate(0,125px); opacity:0;color: teal;
 
 }
 }
-.parole{
-    color: darkslategrey;
-    animation: farapparire 6s linear 1s infinite;
- }   
- 
+.parole i:first-child{
+    
+    color: rgb(255, 255, 255);
+    animation: show 6s linear 1s infinite;
+}   
+@keyframes showothers{
+   0%{
+       transform: translate(0,-125px); opacity:0
+    }
+    50%{
+        transform: translate(0,-125px); opacity:0 ;color: teal;
+    }
+    
+   75%{
+       transform: translate(0,0px); opacity:1;color: teal;
+    }
+   100%{
+       transform: translate(0,125px); opacity:0; color:white;
+
+}
+}
+ .parole i{
+    color: rgb(255, 255, 255);
+    animation: showothers 12s linear 1s infinite;
+
+ }
